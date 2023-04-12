@@ -1,12 +1,12 @@
-# Hexa Modeling Prototype
+# HexBox
 
 ## Setup
 
 1. Clone this repository:
 
 ```Shell
-git clone https://github.com/francescozoccheddu/hexa-modeling-prototype.git
-cd hexa-modeling-prototype
+git clone https://github.com/gcherchi/HexBox.git
+cd HexBox
 ```
 
 2. Generate the build system:
