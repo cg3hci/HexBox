@@ -49,6 +49,19 @@ Tested on MSVC v143 on Windows 11 and GCC 10 and Clang 14 on Ubuntu 22.10.
 > **NOTE:**  
 > On Ubuntu, make sure to have `libgl1-mesa-dev`, `libglu1-mesa-dev` and `xorg-dev` installed.
 
-## Future work
+## Cyting us
 
-See [TODO.md](TODO.md).
+If you use HexBox for your project, please cite our paper with the following BibTeX entry: 
+
+```bibtex
+@article{hexbox2023,
+  title   = {HexBox: Interactive Box Modeling of Hexahedral Meshes},
+  author  = {Zoccheddu, Francesco and Gobbetti, Enrico and Livesu, Marco and Pietroni, Nico and Cherchi, Gianmarco},
+  journal = {Computer Graphics Forum},
+  year    = {2023},
+  volume  = {},
+  number  = {},
+  pages   = {},
+  doi     = {},
+}
+```
