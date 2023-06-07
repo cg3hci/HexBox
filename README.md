@@ -56,7 +56,7 @@ If you use HexBox for your project, please cite our paper with the following Bib
 ```bibtex
 @article{hexbox2023,
   title   = {HexBox: Interactive Box Modeling of Hexahedral Meshes},
-  author  = {Zoccheddu, Francesco and Gobbetti, Enrico and Livesu, Marco and Pietroni, Nico and Cherchi, Gianmarco},
+  author  = {Zoccheddu, F. and Gobbetti, E. and Livesu, M. and Pietroni, N. and Cherchi, G.},
   journal = {Computer Graphics Forum},
   year    = {2023},
   volume  = {},
