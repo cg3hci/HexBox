@@ -22,8 +22,8 @@ cd HexBox
 2. Generate the build system:
 
 ```Shell
-mkdir out
-cd out
+mkdir build
+cd build
 cmake ..
 ```
 
