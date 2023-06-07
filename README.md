@@ -39,19 +39,13 @@ cmake --build .
 
 ## Compatibility
 
-Requires [CMake](https://cmake.org/) 3.14+, a modern C++20 compiler, OpenGL 2.0 support and an Internet connection.
+HexBox requires [CMake](https://cmake.org/) 3.14+, a modern C++20 compiler, and OpenGL 2.0.<br>
+It has been successfully tested on MSVC v143 on Windows 11, GCC 10 and Clang 14 on Ubuntu 22.10 and Clang14 on MacOS.
 
-Tested on MSVC v143 on Windows 11 and GCC 10 and Clang 14 on Ubuntu 22.10. 
-
-> **NOTE:**  
-> With this configuration Cinolib generates hundreds of warnings (OGDF might also generate some warnings on GCC). Compilation should succeed anyway; just ignore them.
-
-> **NOTE:**  
-> On Ubuntu, make sure to have `libgl1-mesa-dev`, `libglu1-mesa-dev` and `xorg-dev` installed.
 
 ## Cyting us
 
-If you use HexBox for your project, please cite our paper with the following BibTeX entry: 
+If you use HexBox on your projects, please consider citing our paper using the following BibTeX entry: 
 
 ```bibtex
 @article{hexbox2023,
