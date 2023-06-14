@@ -43,7 +43,7 @@ iHexBox requires [CMake](https://cmake.org/) 3.14+, a modern C++20 compiler, and
 
 ## Videos, Tutorials
 
-HexBox is meant to be a live project. On [this](videos.md) page you can find the video examples that were originally attached to the SGP submission. In the near future we will operate to create additional tutorials and tips & tricks to create a community around our tool and help users make the best of it. 
+HexBox is meant to be a live project. On [this](videos.md) page you can find the video examples that were originally attached to the SGP submission. In the near future we will operate to create additional tutorials and tips & tricks to build a community around our tool, helping users to make the best of it. 
 
 ## Cyting us
 
