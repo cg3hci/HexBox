@@ -44,7 +44,7 @@ It has been successfully tested on MSVC v143 on Windows 11, GCC 10 and Clang 14 
 
 ## Videos
 
-On [this page](videos.md), you can watch several videos showing the modeling sessions of the images in our paper (and more...). 
+On [this page](/videos/videos.md), you can watch several videos showing the modeling sessions of the images in our paper (and more...). 
 
 ## Cyting us
 
