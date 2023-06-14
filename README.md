@@ -6,7 +6,7 @@ HexBox is an intuitive modeling method and interactive tool for creating and edi
 Hexbox brings the major and widely validated surface modeling paradigm of surface box modeling into the world of hex meshing.
 This is the reference implementation of the paper
 
-[***HexBox: Interactive Box Modeling of Hexahedral Meshes***]() </br>
+[***HexBox: Interactive Box Modeling of Hexahedral Meshes***](https://www.gianmarcocherchi.com/pdf/hexbox.pdf) </br>
 F. Zoccheddu, [E. Gobbetti](https://www.crs4.it/peopledetails/8/enrico-gobbetti/), [M. Livesu](http://pers.ge.imati.cnr.it/livesu/), [N. Pietroni](https://www.nicopietroni.com), [G. Cherchi](http://www.gianmarcocherchi.com)</br>
 _Computer Graphics Forum (SGP 2023)_.
 
