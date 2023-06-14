@@ -15,7 +15,7 @@ _Computer Graphics Forum (SGP 2023)_.
 1. Clone this repository:
 
 ```Shell
-git clone https://github.com/gcherchi/HexBox.git
+git clone https://github.com/cg3hci/HexBox.git
 cd HexBox
 ```
 
