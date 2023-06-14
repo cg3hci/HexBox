@@ -8,3 +8,4 @@ CMakeSettings.json
 
 # CMake output
 out/
+.DS_Store
