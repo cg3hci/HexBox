@@ -39,8 +39,7 @@ cmake --build .
 
 ## Compatibility
 
-HexBox requires [CMake](https://cmake.org/) 3.14+, a modern C++20 compiler, and OpenGL 2.0.<br>
-It has been successfully tested on MSVC v143 on Windows 11, GCC 10 and Clang 14 on Ubuntu 22.10 and Clang14 on MacOS.
+iHexBox requires [CMake](https://cmake.org/) 3.14+, a modern C++20 compiler, and OpenGL 2.0. As of today, t has been successfully tested on MSVC v143 on Windows 11, GCC 10 and Clang 14 on Ubuntu 22.10 and Clang14 on MacOS.
 
 ## Videos, Tutorials
 
