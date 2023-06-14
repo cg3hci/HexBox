@@ -42,9 +42,9 @@ cmake --build .
 HexBox requires [CMake](https://cmake.org/) 3.14+, a modern C++20 compiler, and OpenGL 2.0.<br>
 It has been successfully tested on MSVC v143 on Windows 11, GCC 10 and Clang 14 on Ubuntu 22.10 and Clang14 on MacOS.
 
-## Videos
+## Videos, Tutorials
 
-On [this page](videos.md), you can watch several videos showing the modeling sessions of the images in our paper (and more...). 
+HexBox is meant to be a live project. On [this](videos.md) page you can find the video examples that were originally attached to the SGP submission. In the near future we will operate to create additional tutorials and tips & tricks to create a community around our tool and help users make the best of it. 
 
 ## Cyting us
 
