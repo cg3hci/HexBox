@@ -22,6 +22,7 @@ namespace HMP::Actions
 
 		const std::vector<std::pair<const Dag::NodeHandle<Dag::Delete>, Dag::Element* const>> m_operations;
 
+		std::vector<std::pair<const Dag::NodeHandle<Dag::Delete>, Dag::Element* const>> prepare(const std::vector<Dag::Element*>& _elements);
 		void apply() override;
 		void unapply() override;
 

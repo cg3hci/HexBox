@@ -8,7 +8,7 @@
 namespace HMP::Actions
 {
 
-	std::vector<std::pair<const Dag::NodeHandle<Dag::Refine>, Dag::Element* const>> prepare(const std::vector<Dag::Element*>& _elements)
+	std::vector<std::pair<const Dag::NodeHandle<Dag::Refine>, Dag::Element* const>> RefineSome::prepare(const std::vector<Dag::Element*>& _elements)
 	{
 		return cpputils::range::of(_elements)
 			.map([](Dag::Element* _el)

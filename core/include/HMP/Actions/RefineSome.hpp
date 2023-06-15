@@ -23,6 +23,7 @@ namespace HMP::Actions
 		const std::vector<std::pair<const Dag::NodeHandle<Dag::Refine>, Dag::Element* const>> m_operations;
 		Meshing::Mesher::State m_oldState;
 
+		std::vector<std::pair<const Dag::NodeHandle<Dag::Refine>, Dag::Element* const>> prepare(const std::vector<Dag::Element*>& _elements);
 		void apply() override;
 		void unapply() override;
 
