@@ -3,7 +3,7 @@
 include (FetchContent)
 set (FETCHCONTENT_QUIET FALSE)
 
-project ("hexa-modeling-prototype" VERSION 0.3)
+project ("HexBox" VERSION 0.3)
 
 add_compile_definitions(HMP_NAME=\"${CMAKE_PROJECT_NAME}\")
 add_compile_definitions(HMP_VERSION=\"${CMAKE_PROJECT_VERSION}\")
