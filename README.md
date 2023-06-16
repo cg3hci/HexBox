@@ -1,5 +1,10 @@
 # HexBox: Interactive Box Modeling of Hexahedral Meshes
 
+> **Warning**
+> We are still preparing the final version of the code.
+> This work will be presented in July during the SGP 2023 conference. 
+
+
 <p align="center"><img src="teaser.png"></p>
 
 HexBox is an intuitive modeling method and interactive tool for creating and editing hexahedral meshes.
