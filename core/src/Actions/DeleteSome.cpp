@@ -7,7 +7,7 @@
 namespace HMP::Actions
 {
 
-	std::vector<std::pair<const Dag::NodeHandle<Dag::Delete>, Dag::Element* const>> prepare(const std::vector<Dag::Element*>& _elements)
+	static std::vector<std::pair<const Dag::NodeHandle<Dag::Delete>, Dag::Element* const>> prepare(const std::vector<Dag::Element*>& _elements)
 	{
 		return cpputils::range::of(_elements)
 			.map([](Dag::Element* _el)
