@@ -45,10 +45,6 @@ target_compile_definitions(gui
     PUBLIC HMP_GUI_COMPILER_ID=\"${CMAKE_CXX_COMPILER_ID}\"
 )
 
-target_compile_definitions(imgui
-    PUBLIC ImDrawIdx=unsigned\ int
-)
-
 if (HMP_GUI_ENABLE_DAG_VIEWER)
 
     target_sources(gui
