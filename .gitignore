@@ -6,6 +6,9 @@ CMakeSettings.json
 # Visual Studio Code
 .vscode/
 
+# MacOS
+.DS_Store
+
 # CMake output
 out/
-.DS_Store
+build/
