@@ -55,6 +55,8 @@ If you use HexBox on your projects, please consider citing our paper using the f
   title   = {HexBox: Interactive Box Modeling of Hexahedral Meshes},
   author  = {Zoccheddu, F. and Gobbetti, E. and Livesu, M. and Pietroni, N. and Cherchi, G.},
   journal = {Computer Graphics Forum},
+  volume  = {42},
+  number  = {5},
   year    = {2023},
   issn    = {1467-8659},
   doi     = {10.1111/cgf.14899}
