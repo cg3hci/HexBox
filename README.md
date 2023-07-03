@@ -1,8 +1,5 @@
 # HexBox: Interactive Box Modeling of Hexahedral Meshes
 
-> **Warning**<br>
-> We are still preparing the final version of the code. <br> This work will be presented in July during the SGP 2023 conference.
-
 
 <p align="center"><img src="https://github.com/cg3hci/HexBox/assets/23437496/a6158e8b-5653-430f-8b3a-32c9bba159e3"></p>
 
