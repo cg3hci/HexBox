@@ -56,10 +56,8 @@ If you use HexBox on your projects, please consider citing our paper using the f
   author  = {Zoccheddu, F. and Gobbetti, E. and Livesu, M. and Pietroni, N. and Cherchi, G.},
   journal = {Computer Graphics Forum},
   year    = {2023},
-  volume  = {},
-  number  = {},
-  pages   = {},
-  doi     = {},
+  issn = {1467-8659},
+  doi = {10.1111/cgf.14899}
 }
 ```
 
