@@ -481,7 +481,7 @@ namespace HMP::Gui::Widgets
 	void Debug::selectCloseVerts()
 	{
 		const Meshing::Mesher::Mesh& mesh{ app().mesh };
-		std::map<Vec, Id, Meshing::Utils::VertComparer> vertMap{ {.eps = testEps} };
+		std::map<Vec, Id, Meshing::Utils::VertComparer> vertMap{ Meshing::Utils::VertComparer{ .eps = testEps } };
 		app().vertEditWidget.clear();
 		for (Id vid{}; vid < mesh.num_verts(); vid++)
 		{
