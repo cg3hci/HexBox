@@ -16,8 +16,8 @@ namespace HMP::Gui::Utils::Drawing
 			return std::nullopt;
 		}
 		return ImVec2{
-			static_cast<float>(point2d.x() * _canvas.dpi_factor()),
-			static_cast<float>(point2d.y() * _canvas.dpi_factor())
+			static_cast<float>(point2d.x()),
+			static_cast<float>(point2d.y())
 		};
 	}
 
