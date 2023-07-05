@@ -1,5 +1,7 @@
 # HexBox: Interactive Box Modeling of Hexahedral Meshes
 
+> **Note** <br>
+> We are preparing an amazing tutorial on how to use HexBox. Stay tuned :wink:
 
 <p align="center"><img src="https://github.com/cg3hci/HexBox/assets/23437496/a6158e8b-5653-430f-8b3a-32c9bba159e3"></p>
 
@@ -37,6 +39,9 @@ cmake --build .
 4. Run the `gui` executable.
 
 5. Enjoy! 😉
+
+> **Note**
+> We are preparing a tutorial on how to use HexBox. Meanwhile, we print the list of commands and shortcuts in the terminal.
 
 ## Compatibility
 
