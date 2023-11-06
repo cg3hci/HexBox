@@ -2,6 +2,7 @@
 .vs/
 CMakePresets.json
 CMakeSettings.json
+cmake-build-debug
 
 # Visual Studio Code
 .vscode/

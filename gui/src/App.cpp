@@ -51,8 +51,11 @@ namespace HMP::Gui
 		}
 		std::cout << "-------------------------------\n";
 	}
+    //Create a vector of dag elements
+    //std::vector<Dag::Element*> clickedElements;
 
-	// actions
+
+    // actions
 
 	void App::onActionApplied()
 	{
@@ -64,6 +67,8 @@ namespace HMP::Gui
 			widget->actionApplied();
 		}
 		m_canvas.draw();
+        clickedElements.clear();
+        cursorsOfClickedElements.clear();
 	}
 
 	void App::applyAction(Commander::Action& _action)
@@ -149,7 +154,7 @@ namespace HMP::Gui
 		}
 	}
 
-	bool App::onMouseLeftClicked(int)
+	bool App::onMouseLeftClicked(int event)
 	{
 		for (Widget* const widget : m_widgets)
 		{
@@ -158,6 +163,14 @@ namespace HMP::Gui
 				return true;
 			}
 		}
+        if(m_cursor.element && event == 8)
+        {
+            if (std::find(cursorsOfClickedElements.begin(), cursorsOfClickedElements.end(), m_cursor) == cursorsOfClickedElements.end())
+            {
+                clickedElements.push_back(m_cursor.element);
+                cursorsOfClickedElements.push_back(m_cursor);
+            }
+        }
 		return false;
 	}
 
@@ -176,6 +189,12 @@ namespace HMP::Gui
 	bool App::onKeyPressed(int _key, int _modifiers)
 	{
 		cinolib::KeyBinding key{ _key, _modifiers };
+        if(_key == 256)
+        {
+            clickedElements.clear();
+            cursorsOfClickedElements.clear();
+        }
+
 		for (Widget* const widget : m_widgets)
 		{
 			if (widget->keyPressed(key))

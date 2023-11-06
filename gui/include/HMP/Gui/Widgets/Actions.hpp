@@ -6,6 +6,7 @@
 #include <HMP/Dag/Extrude.hpp>
 #include <HMP/Dag/Element.hpp>
 #include <vector>
+#include "HMP/Gui/App.hpp"
 
 namespace HMP::Gui::Widgets
 {
@@ -17,7 +18,7 @@ namespace HMP::Gui::Widgets
 
 		static constexpr cinolib::KeyBinding c_kbExtrudeFace{ GLFW_KEY_E };
 		static constexpr cinolib::KeyBinding c_kbExtrudeEdge{ GLFW_KEY_E, GLFW_MOD_ALT };
-		static constexpr cinolib::KeyBinding c_kbExtrudeVertex{ GLFW_KEY_E, GLFW_MOD_ALT | GLFW_MOD_CONTROL };
+        static constexpr cinolib::KeyBinding c_kbExtrudeVertex{ GLFW_KEY_E, GLFW_MOD_ALT | GLFW_MOD_SUPER };
 		static constexpr cinolib::KeyBinding c_kbExtrudeSelectedFace{ GLFW_KEY_E, GLFW_MOD_SHIFT };
 		static constexpr cinolib::KeyBinding c_kbRefineSelectedElements{ GLFW_KEY_H, GLFW_MOD_SHIFT };
 		static constexpr cinolib::KeyBinding c_kbDeleteSelectedElements{ GLFW_KEY_D, GLFW_MOD_SHIFT };
@@ -40,6 +41,13 @@ namespace HMP::Gui::Widgets
 		void printUsage() const override;
 
 		bool hoveredExtrudeElements(Dag::Extrude::ESource _source, cpputils::collections::FixedVector<Dag::Element*, 3>& _elements, cpputils::collections::FixedVector<I, 3>& _fis, I& _firstVi, bool& _clockwise);
+        bool clickedExtrudeElements(Dag::Extrude::ESource _source, cpputils::collections::FixedVector<Dag::Element *, 3> &_elements, cpputils::collections::FixedVector<I, 3> &_fis, I &_firstVi, bool &_clockwise, Dag::Element *element, App::Cursor cursor);
+        bool clickedExtrudeEdgeElements(Dag::Extrude::ESource _source, cpputils::collections::FixedVector<Dag::Element *, 3> &_elements, cpputils::collections::FixedVector<I, 3> &_fis, I &_firstVi, bool &_clockwise, Dag::Element *element, App::Cursor cursor);
+        bool clickedExtrudeVertexElements(Dag::Extrude::ESource _source, cpputils::collections::FixedVector<Dag::Element *, 3> &_elements, cpputils::collections::FixedVector<I, 3> &_fis, I &_firstVi, bool &_clockwise, Dag::Element *element, App::Cursor cursor);
+        std::optional<unsigned int> getEdgeInCommon(std::vector<Dag::Element *> clickedElements);
+        std::optional<unsigned int> getVertexInCommon(std::vector<Dag::Element *> clickedElements);
+        std::vector<std::vector<unsigned int>> getClickedElementsFids(const std::vector<App::Cursor>& cursorsOfClickedElements);
+        bool checkIfClickedExtrudeIsPossible();
 		void onExtrude(Dag::Extrude::ESource _source);
 		void onExtrudeSelectedFace();
 		void onCopy();
@@ -61,6 +69,7 @@ namespace HMP::Gui::Widgets
 
 		void clear();
 
-	};
+        bool compareByAdjacentFaces(App::Cursor a, App::Cursor b);
+    };
 
 }
