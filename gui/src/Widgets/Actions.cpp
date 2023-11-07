@@ -41,14 +41,6 @@ namespace HMP::Gui::Widgets
 		{
 			onExtrude(Dag::Extrude::ESource::Face);
 		}
-		else if (_key == c_kbExtrudeEdge)
-		{
-			onExtrude(Dag::Extrude::ESource::Edge);
-		}
-		else if (_key == c_kbExtrudeVertex)
-		{
-			onExtrude(Dag::Extrude::ESource::Vertex);
-		}
 		// extrude selected
 		else if (_key == c_kbExtrudeSelectedFace)
 		{
@@ -194,8 +186,6 @@ namespace HMP::Gui::Widgets
 	void Actions::printUsage() const
 	{
 		cinolib::print_binding(c_kbExtrudeFace.name(), "extrude face");
-		cinolib::print_binding(c_kbExtrudeEdge.name(), "extrude edge");
-		cinolib::print_binding(c_kbExtrudeVertex.name(), "extrude vertex");
 		cinolib::print_binding(c_kbExtrudeSelectedFace.name(), "extrude selected face");
 		cinolib::print_binding(c_kbRefine.name(), "refine");
 		cinolib::print_binding(c_kbDoubleRefine.name(), "refine twice");
@@ -874,168 +864,8 @@ namespace HMP::Gui::Widgets
 
             if(index > 0)
                 return;
-
-
-            /*
-            std::vector<unsigned int> allClickedFaces;
-            allClickedFaces.reserve(cursorsOfClickedElements.size());
-            for(App::Cursor cursor : cursorsOfClickedElements)
-            {
-                allClickedFaces.push_back(cursor.fid);
-            }
-            std::vector<std::tuple<App::Cursor, int>> clickedElementsWithAdjFaces;
-            for(App::Cursor cursor : cursorsOfClickedElements)
-            {
-                std::vector<unsigned int> adjacentClickedFaces = intersectVectors(app().mesh.adj_f2f(cursor.fid), allClickedFaces);
-                std::tuple<App::Cursor, int> tuple = std::make_tuple(cursor, static_cast<int>(adjacentClickedFaces.size()));
-                clickedElementsWithAdjFaces.push_back(tuple);
-            }
-            std::sort(clickedElementsWithAdjFaces.begin(), clickedElementsWithAdjFaces.end(),
-                      [](const std::tuple<App::Cursor, int>& a, const std::tuple<App::Cursor, int>& b) {
-                          return std::get<1>(a) > std::get<1>(b);
-                      });
-            std::vector<App::Cursor> sortedCursors;
-            sortedCursors.reserve(clickedElementsWithAdjFaces.size());
-            for(const auto tuple : clickedElementsWithAdjFaces)
-            {
-                sortedCursors.push_back(std::get<0>(tuple));
-            }
-            int index = 0;
-            for (App::Cursor cursor : sortedCursors)
-            {
-                if(index == 0)
-                {
-                    if(clickedExtrudeElements(_source, elements, fis, firstVi, clockwise, cursor.element, cursor))
-                    {
-                        if(checkIfClickedExtrudeIsPossible())
-                        {
-                            app().applyAction(*new HMP::Actions::Extrude{ elements, fis, firstVi, clockwise });
-                        }
-                    }
-                } else
-                {
-                    std::vector<unsigned int> adjFaces = intersectVectors(app().mesh.adj_f2f(cursor.fid), allClickedFaces);
-                    for(unsigned int fid : adjFaces)
-                    {
-                        std::vector<unsigned int> adjPids = app().mesh.adj_f2p(fid);
-                        std::vector<unsigned int> cursorPid = {cursor.pid};
-                        if(adjPids.size() == 2 && intersectVectors(cursorPid, adjPids).empty())
-                        {
-                            std::vector<unsigned int> adjEdgesFirst = app().mesh.adj_p2e(adjPids[0]);
-                            std::vector<unsigned int> adjEdgesSecond = app().mesh.adj_p2e(adjPids[1]);
-                            std::vector<unsigned int> intersectedEdgesFirst = intersectVectors(adjEdgesFirst, app().mesh.adj_f2e(cursor.fid));
-                            std::vector<unsigned int> intersectedEdgesSecond = intersectVectors(adjEdgesSecond, app().mesh.adj_f2e(cursor.fid));
-                            unsigned int edgeInCommon;
-                            if(intersectedEdgesFirst.size() == 1)
-                            {
-                                edgeInCommon = intersectedEdgesFirst[0];
-                            }
-                            else if(intersectedEdgesSecond.size() == 1)
-                            {
-                                edgeInCommon = intersectedEdgesSecond[0];
-                            }
-                            else
-                                return;
-
-                            unsigned int vertexInCommon;
-                            cursor.eid = edgeInCommon;
-                            vertexInCommon = app().mesh.adj_e2v(edgeInCommon)[0];
-                            cursor.ei = Meshing::Utils::ei(cursor.element->vids, Meshing::Utils::eidVids(app().mesh, edgeInCommon));
-                            cursor.vid = vertexInCommon;
-                            cursor.vi = Meshing::Utils::vi(cursor.element->vids, vertexInCommon);
-                            if(clickedExtrudeEdgeElements(_source, elements, fis, firstVi, clockwise, cursor.element, cursor))
-                            {
-                                app().applyAction(*new HMP::Actions::Extrude{ elements, fis, firstVi, clockwise });
-                            }
-                        }
-                        else
-                        {
-                            if(clickedExtrudeElements(_source, elements, fis, firstVi, clockwise, cursor.element, cursor))
-                            {
-                                if(checkIfClickedExtrudeIsPossible())
-                                {
-                                    app().applyAction(*new HMP::Actions::Extrude{ elements, fis, firstVi, clockwise });
-                                }
-                            }
-                        }
-                    }
-                }
-                index++;
-            }
-
-            if(index > 0)
-                return;*/
-
-            /*for (Dag::Element* element : app().clickedElements)
-            {
-                if(clickedExtrudeElements(_source, elements, fis, firstVi, clockwise, element, cursorsOfClickedElements[i]))
-                {
-                    if(checkIfClickedExtrudeIsPossible())
-                    {
-                        app().applyAction(*new HMP::Actions::Extrude{ elements, fis, firstVi, clockwise });
-                    }
-                }
-                i++;
-            }
-            return;*/
         }
 
-        /*if(_source == Dag::Extrude::ESource::Face)
-        {
-            for (Dag::Element* element : app().clickedElements)
-            {
-                if(clickedExtrudeElements(_source, elements, fis, firstVi, clockwise, element, cursorsOfClickedElements[i]))
-                {
-                    if(checkIfClickedExtrudeIsPossible())
-                    {
-                        app().applyAction(*new HMP::Actions::Extrude{ elements, fis, firstVi, clockwise });
-                    }
-                }
-                extrudedClickedElements = true;
-                i++;
-            }
-        } else if (_source == Dag::Extrude::ESource::Edge)
-        {
-            std::optional<unsigned int> edgeInCommonOptional = getEdgeInCommon(app().clickedElements);
-            if(edgeInCommonOptional.has_value())
-            {
-                unsigned int edgeInCommon = edgeInCommonOptional.value();
-                unsigned int vertexInCommon;
-                App::Cursor cursor = app().cursorsOfClickedElements[0];
-                cursor.eid = edgeInCommon;
-                vertexInCommon = app().mesh.adj_e2v(edgeInCommon)[0];
-                cursor.ei = Meshing::Utils::ei(app().clickedElements[0]->vids, Meshing::Utils::eidVids(app().mesh, edgeInCommon));
-                cursor.vid = vertexInCommon;
-                cursor.vi = Meshing::Utils::vi(app().clickedElements[0]->vids, vertexInCommon);
-                if(clickedExtrudeEdgeElements(_source, elements, fis, firstVi, clockwise, app().clickedElements[0], cursor))
-                {
-                    app().applyAction(*new HMP::Actions::Extrude{ elements, fis, firstVi, clockwise });
-                }
-                extrudedClickedElements = true;
-            }
-        }
-        else {
-            std::optional<unsigned int> vertexInCommonOptional = getVertexInCommon(app().clickedElements);
-            std::vector<Dag::Element*> firstTwoElements = app().clickedElements;
-            firstTwoElements.resize(2);
-            std::optional<unsigned int> edgeInCommonOptional = getEdgeInCommon(firstTwoElements);
-            if (vertexInCommonOptional.has_value() && edgeInCommonOptional.has_value()) {
-                unsigned int vertexInCommon = vertexInCommonOptional.value();
-                unsigned int edgeInCommon = edgeInCommonOptional.value();
-                App::Cursor cursor = app().cursorsOfClickedElements[0];
-                cursor.eid = edgeInCommon;
-                cursor.ei = Meshing::Utils::ei(app().clickedElements[0]->vids,
-                                               Meshing::Utils::eidVids(app().mesh, edgeInCommon));
-                cursor.vid = vertexInCommon;
-                cursor.vi = Meshing::Utils::vi(app().clickedElements[0]->vids, vertexInCommon);
-                if (clickedExtrudeVertexElements(_source, elements, fis, firstVi, clockwise, app().clickedElements[0],
-                                               cursor)) {
-                    app().applyAction(*new HMP::Actions::Extrude{elements, fis, firstVi, clockwise});
-                }
-                extrudedClickedElements = true;
-            }
-        }
-        */
 		if (hoveredExtrudeElements(_source, elements, fis, firstVi, clockwise))
 		{
 			app().applyAction(*new HMP::Actions::Extrude{ elements, fis, firstVi, clockwise });
