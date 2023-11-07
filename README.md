@@ -51,6 +51,8 @@ HexBox requires [CMake](https://cmake.org/) 3.14+, a modern C++20 compiler, and 
 
 HexBox is meant to be a live project. On [this](videos.md) page you can find the video examples that were originally attached to the SGP submission. In the near future we will operate to create additional tutorials and tips & tricks to build a community around our tool, helping users to make the best of it. 
 
+**[Tutorials (wip)](tutorials.md)**
+
 ## Acknowledgement
 
 If you use HexBox on your projects, please consider citing our paper using the following BibTeX entry: 
