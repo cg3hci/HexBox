@@ -18,9 +18,16 @@ Local refinement in hexahedral (hex) meshes is a process used to enhance
 the mesh quality and accuracy in specific regions of interest. This technique
 selectively subdivides hexahedral elements and it is obtained by pressing H
 while hovering on the element to refine.
+<div align="center">
+  <video src="https://github.com/pusceddusimone/HexBox/assets/92328763/1cc91973-83ec-4aa4-b7f0-f7369f0fac8e"/>
+</div>
+
 
 ### Make Conforming
 After a local refinement, it is possible to restore mesh conformity by pressing Q.
+<div align="center">
+  <video src="https://github.com/pusceddusimone/HexBox/assets/92328763/62d25a34-333f-4d80-9519-54047e0b0c94"/>
+</div>
 
 
 ## Extrusion
