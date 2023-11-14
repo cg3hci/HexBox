@@ -28,6 +28,7 @@ After a local refinement, it is possible to restore mesh conformity by pressing 
 <div align="center">
   <video src="https://github.com/pusceddusimone/HexBox/assets/92328763/62d25a34-333f-4d80-9519-54047e0b0c94"/>
 </div>
+![make conforming](https://github.com/pusceddusimone/HexBox/assets/92328763/c016b0b3-1a46-4ec5-b0e8-e1130f64001e)
 
 
 ## Extrusion
