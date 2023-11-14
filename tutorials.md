@@ -10,7 +10,7 @@ Global refinement of hex meshes involves subdividing each hexahedral element int
 smaller hexes to increase mesh density and improve solution accuracy. This process enhances the resolution of the computational
 model and it is obtained by pressing Ctrl+0.
 <div align="center">
-  <video src="https://github.com/pusceddusimone/HexBox/assets/92328763/28b8cb7e-ed45-4d71-a3eb-199b7b306ce3"/>
+  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/ee86e023-ba84-494a-986e-4f69f3c9f753" width="70%" height="70%">
 </div>
 
 ### Local Refinement
@@ -19,17 +19,14 @@ the mesh quality and accuracy in specific regions of interest. This technique
 selectively subdivides hexahedral elements and it is obtained by pressing H
 while hovering on the element to refine.
 <div align="center">
-  <video src="https://github.com/pusceddusimone/HexBox/assets/92328763/1cc91973-83ec-4aa4-b7f0-f7369f0fac8e"/>
+  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/960b8440-e9fb-4e65-8d46-30be937c3a38" width="70%" height="70%">
 </div>
-
 
 ### Make Conforming
 After a local refinement, it is possible to restore mesh conformity by pressing Q.
 <div align="center">
-  <video src="https://github.com/pusceddusimone/HexBox/assets/92328763/62d25a34-333f-4d80-9519-54047e0b0c94"/>
+  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/4385a613-4a02-420d-bd5d-540c1c8e2bf6" width="70%" height="70%">
 </div>
-![make conforming](https://github.com/pusceddusimone/HexBox/assets/92328763/c016b0b3-1a46-4ec5-b0e8-e1130f64001e)
-
 
 ## Extrusion
 
@@ -37,9 +34,8 @@ After a local refinement, it is possible to restore mesh conformity by pressing 
 Extrusion of a single face can be achieved by hovering over
 the element you want to extrude and pressing E.
 <div align="center">
-  <video src="https://github.com/pusceddusimone/HexBox/assets/92328763/e6687db8-907b-43ca-93a4-5a83b3d8885e"/>
+  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/3a4edde4-85b8-49e9-8179-43aa1a54d87f" width="70%" height="70%">
 </div>
-
 
 ### Extrusion of two adjacent faces in a concave configuration
 Extruding two adjacent faces in a concave configuration results
@@ -47,36 +43,35 @@ in two new elements that are not adjacent to each other; this result
 can be obtained by selecting two faces in a concave configuration by
 using Ctrl+MouseLeft and then by pressing E.
 <div align="center">
-  <video src="https://github.com/pusceddusimone/HexBox/assets/92328763/4ddd0952-e752-4461-8d3a-43d61cd2f4a2"/>
+  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/ebf39198-5857-484f-8774-831bc9fa1a02" width="70%" height="70%">
 </div>
 
 ### Extrusion of two adjacent faces in a convex configuration
-Extruding two adjacent faces in a concave configuration results
+Extruding two adjacent faces in a convex configuration results
 in one new element adjacent to both faces; this result
 can be obtained by selecting two faces in a convex configuration by
 using Ctrl+MouseLeft and then by pressing E.
 <div align="center">
-  <video src="https://github.com/pusceddusimone/HexBox/assets/92328763/6d52676b-3aec-4ff1-b7ad-f618079d10e2"/>
+  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/caf3298f-d3f9-44aa-bd92-0daae39d7523" width="70%" height="70%">
 </div>
 
-### Extrusion of three adjacent faces in a convex configuration
+### Extrusion of three adjacent faces in a concave configuration
 Extruding three adjacent faces in a concave configuration results
 in three new elements that are not adjacent to each other; this result
 can be obtained by selecting three faces in a concave configuration by
 using Ctrl+MouseLeft and then by pressing E.
 <div align="center">
-  <video src="https://github.com/pusceddusimone/HexBox/assets/92328763/16c0f930-bbbe-4de4-b9d0-eced8c1c19d9"/>
+  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/3d67bef8-103e-4648-9b82-9496f735334b" width="70%" height="70%">
 </div>
-    
+
 ### Extrusion of three adjacent faces in a convex configuration
 Extruding three adjacent faces in a concave configuration results
 in one new element adjacent to all three faces; this result
 can be obtained by selecting two faces in a convex configuration by
 using Ctrl+MouseLeft and then by pressing E.
 <div align="center">
-  <video src="https://github.com/pusceddusimone/HexBox/assets/92328763/5056176f-ac88-456c-9e92-3b20f454da17"/>
+  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/04b76978-e3b8-4119-9a26-b8909a8fd2a9" width="70%" height="70%">
 </div>
-
 
 
 ### Extrusion of n adjacent faces in the plane
@@ -85,6 +80,5 @@ new elements that will be adjacent to each other provided
 their source faces are adjacent; this result can be obtained by selecting N
 adjacent faces in the plane by using Ctrl+MouseLeft and then by pressing E.
 <div align="center">
-  <video src="https://github.com/pusceddusimone/HexBox/assets/92328763/82a85149-c651-458f-9683-badeee4b167c"/>
+  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/803f9b44-babf-4487-81fc-c756104ebbcb" width="70%" height="70%">
 </div>
-
