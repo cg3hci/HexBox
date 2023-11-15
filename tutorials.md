@@ -34,7 +34,7 @@ After a local refinement, it is possible to restore mesh conformity by pressing 
 Extrusion of a single face can be achieved by hovering over
 the element you want to extrude and pressing E.
 <div align="center">
-  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/3a4edde4-85b8-49e9-8179-43aa1a54d87f" width="70%" height="70%">
+  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/b8bae51c-3840-40c3-afcd-639b9cd2a7d5" width="70%" height="70%">
 </div>
 
 ### Extrusion of two adjacent faces in a concave configuration
@@ -52,7 +52,7 @@ in one new element adjacent to both faces; this result
 can be obtained by selecting two faces in a convex configuration by
 using Ctrl+MouseLeft and then by pressing E.
 <div align="center">
-  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/caf3298f-d3f9-44aa-bd92-0daae39d7523" width="70%" height="70%">
+  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/0acfa31e-3342-46aa-8fe0-76c30f9dd0af" width="70%" height="70%">
 </div>
 
 ### Extrusion of three adjacent faces in a concave configuration
@@ -61,7 +61,7 @@ in three new elements that are not adjacent to each other; this result
 can be obtained by selecting three faces in a concave configuration by
 using Ctrl+MouseLeft and then by pressing E.
 <div align="center">
-  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/3d67bef8-103e-4648-9b82-9496f735334b" width="70%" height="70%">
+  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/c1356357-2520-4af2-bd7e-69e84761bb8e" width="70%" height="70%">
 </div>
 
 ### Extrusion of three adjacent faces in a convex configuration
