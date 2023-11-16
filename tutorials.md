@@ -62,7 +62,7 @@ in three new elements that are not adjacent to each other; this result
 can be obtained by selecting three faces in a convex configuration by
 using Ctrl+MouseLeft and then by pressing E.
 <div align="center">
-  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/a8823883-d10a-476b-bed6-a6c1b216bffa" width="70%" height="70%">
+  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/99f59a7e-6dad-4cd2-9c28-a1994f12c2f1" width="70%" height="70%">
 </div>
 
 ### Extrusion of three adjacent faces in a concave configuration
