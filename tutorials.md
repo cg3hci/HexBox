@@ -13,6 +13,7 @@ model and it is obtained by pressing Ctrl+0.
   <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/ee86e023-ba84-494a-986e-4f69f3c9f753" width="70%" height="70%">
 </div>
 
+
 ### Local Refinement
 Local refinement in hexahedral (hex) meshes is a process used to enhance
 the mesh quality and accuracy in specific regions of interest. This technique
@@ -70,7 +71,7 @@ in one new element adjacent to all three faces; this result
 can be obtained by selecting two faces in a concave configuration by
 using Ctrl+MouseLeft and then by pressing E.
 <div align="center">
-  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/04b76978-e3b8-4119-9a26-b8909a8fd2a9" width="70%" height="70%">
+  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/437953e4-6178-46e4-9571-5aa59ab2314b" width="70%" height="70%">
 </div>
 
 
