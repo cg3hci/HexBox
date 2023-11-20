@@ -71,9 +71,8 @@ in one new element adjacent to all three faces; this result
 can be obtained by selecting two faces in a concave configuration by
 using Ctrl+MouseLeft and then by pressing E.
 <div align="center">
-  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/437953e4-6178-46e4-9571-5aa59ab2314b" width="70%" height="70%">
+  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/60943502-b1e8-4334-b0e5-fa525143fab9" width="70%" height="70%">
 </div>
-
 
 ### Extrusion of n adjacent faces in the plane
 Extruding N adjacent faces in the plane will generate N
