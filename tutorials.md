@@ -33,53 +33,44 @@ Local refinement and face refinement introduce hanging nodes, producing a non-co
 ## Extrusion
 
 ### Single Face Extrusion
-Extrusion of a single face can be achieved by hovering over
-the element you want to extrude and pressing E.
+The extrusion of a single face can be achieved by selecting one face and pressing the key E. This operation results in a new hexahedron adjacent to the selected face. For more details, see Section 3.1.2 in the paper.
+
 <div align="center">
   <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/b8bae51c-3840-40c3-afcd-639b9cd2a7d5" width="70%" height="70%">
 </div>
 
 ### Extrusion of two adjacent faces in a convex configuration
-Extruding two adjacent faces in a convex configuration results
-in two new elements that are not adjacent to each other; this result
-can be obtained by selecting two faces in a convex configuration by
-using Ctrl+MouseLeft and then by pressing E.
+Extruding two adjacent faces in a convex configuration (meaning with a dihedral angle between them > $\pi$) results in two new hexahedra, each of them adjacent to one of the selected faces. This result can be obtained by selecting two faces in a convex configuration by using Ctrl+MouseLeft and then by pressing the key E. For more details, see Section 3.1.2 in the paper.
+
 <div align="center">
   <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/ebf39198-5857-484f-8774-831bc9fa1a02" width="70%" height="70%">
 </div>
 
 ### Extrusion of two adjacent faces in a concave configuration
-Extruding two adjacent faces in a concave configuration results
-in one new element adjacent to both faces; this result
-can be obtained by selecting two faces in a concave configuration by
-using Ctrl+MouseLeft and then by pressing E.
+Extruding two adjacent faces in a concave configuration (meaning with a dihedral angle between them < 2&pi) results in a single new hexahedron adjacent to both selected faces. This result can be obtained by selecting two faces in a concave configuration by using Ctrl+MouseLeft and then by pressing the key E. For more details, see Section 3.1.2 in the paper.
 <div align="center">
   <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/0acfa31e-3342-46aa-8fe0-76c30f9dd0af" width="70%" height="70%">
 </div>
 
 ### Extrusion of three adjacent faces in a convex configuration
-Extruding three adjacent faces in a convex configuration results
-in three new elements that are not adjacent to each other; this result
-can be obtained by selecting three faces in a convex configuration by
-using Ctrl+MouseLeft and then by pressing E.
+Extruding three adjacent faces in a convex configuration results in three new hexahedra, each of them adjacent to one of the selected faces. This result can be obtained by selecting three faces in a convex configuration by using Ctrl+MouseLeft and then by pressing the key E. For more details, see Section 3.1.2 in the paper.
+
 <div align="center">
   <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/99f59a7e-6dad-4cd2-9c28-a1994f12c2f1" width="70%" height="70%">
 </div>
 
 ### Extrusion of three adjacent faces in a concave configuration
-Extruding three adjacent faces in a concave configuration results
-in one new element adjacent to all three faces; this result
-can be obtained by selecting two faces in a concave configuration by
-using Ctrl+MouseLeft and then by pressing E.
+Extruding three adjacent faces in a concave configuration results in a single new hexahedron adjacent to all the selected faces. This result
+can be obtained by selecting three faces in a concave configuration by using Ctrl+MouseLeft and then by pressing the key E. For more details, see Section 3.1.2 in the paper.
+
 <div align="center">
   <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/60943502-b1e8-4334-b0e5-fa525143fab9" width="70%" height="70%">
 </div>
 
 ### Extrusion of n adjacent faces in the plane
-Extruding N adjacent faces in the plane will generate N
-new elements that will be adjacent to each other provided
-their source faces are adjacent; this result can be obtained by selecting N
-adjacent faces in the plane by using Ctrl+MouseLeft and then by pressing E.
+Extruding N adjacent faces in an almost flat region will generate N
+new elements adjacent to each other and each of them adjacent to a selected face. This result can be obtained by selecting N adjacent faces by using Ctrl+MouseLeft and then by pressing the key E. For more details, see Section 3.1.2 in the paper.
+
 <div align="center">
   <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/803f9b44-babf-4487-81fc-c756104ebbcb" width="70%" height="70%">
 </div>
