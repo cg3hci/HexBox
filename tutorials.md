@@ -49,7 +49,7 @@ Extruding two adjacent faces in a convex configuration (meaning with a dihedral 
 </div>
 
 ### Extrusion of two adjacent faces in a concave configuration
-Extruding two adjacent faces in a concave configuration (meaning with a dihedral angle between them < 2&pi) results in a single new hexahedron adjacent to both selected faces. This result can be obtained by selecting two faces in a concave configuration by using Ctrl+MouseLeft and then by pressing the key E. For more details, see Section 3.1.2 in the paper.
+Extruding two adjacent faces in a concave configuration (meaning with a dihedral angle between them < $\pi$) results in a single new hexahedron adjacent to both selected faces. This result can be obtained by selecting two faces in a concave configuration by using Ctrl+MouseLeft and then by pressing the key E. For more details, see Section 3.1.2 in the paper.
 <div align="center">
   <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/0acfa31e-3342-46aa-8fe0-76c30f9dd0af" width="70%" height="70%">
 </div>
