@@ -12,6 +12,7 @@ namespace HMP::Gui::Widgets
 
 		void drawCanvas() override;
 
-	};
+        bool mouseClicked(bool _right);
+    };
 
 }

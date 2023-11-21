@@ -13,6 +13,12 @@
 namespace HMP::Gui::Widgets
 {
 
+    bool Highlight::mouseClicked(bool _right)
+    {
+        app().clickedWidgets.push_back(this);
+        return false;
+    }
+
 	void Highlight::drawCanvas()
 	{
 		const float
@@ -52,6 +58,13 @@ namespace HMP::Gui::Widgets
 				circle(drawList, (*eid2d)[0], vertRadius, themer->ovMut, lineThickness);
 			}
 		}
+        int offset = 0;
+        for (const auto& clickedFace : app().clickedElements) {
+            const QuadVerts clickedVerts{ Meshing::Utils::verts(app().mesh, Meshing::Utils::fiVids(clickedFace->vids, app().cursorsOfClickedElements[offset].fi)) };
+            const auto clickedVerts2d{ Utils::Drawing::project(app().canvas, clickedVerts) };
+            quadFilled(drawList, clickedVerts2d, themer->ovFaceHi);//fi == app().cursorsOfClickedElements[offset].fi ? themer->ovFaceHi : themer->ovPolyHi);
+            offset++;
+        }
 		if (app().cursor.element)
 		{
 			for (I i{}; i < 6; i++)
@@ -59,7 +72,8 @@ namespace HMP::Gui::Widgets
 				const I fi{ (i + 1 + app().cursor.fi) % 6 };
 				const QuadVerts fiVerts{ Meshing::Utils::verts(app().mesh, Meshing::Utils::fiVids(app().cursor.element->vids, fi)) };
 				const auto fiVerts2d{ Utils::Drawing::project(app().canvas, fiVerts) };
-				quadFilled(drawList, fiVerts2d, fi == app().cursor.fi ? themer->ovFaceHi : themer->ovPolyHi);
+
+                quadFilled(drawList, fiVerts2d, fi == app().cursor.fi ? themer->ovFaceHi : themer->ovPolyHi);
 			}
 			const auto hPidCenter2d{ Utils::Drawing::project(app().canvas, app().mesh.poly_centroid(app().cursor.pid)) };
 			if (hPidCenter2d)

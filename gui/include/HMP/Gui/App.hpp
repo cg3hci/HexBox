@@ -131,6 +131,9 @@ namespace HMP::Gui
 		static int run(const std::optional<std::string>& _file = std::nullopt);
 
 		Dag::Element* copiedElement{};
+        std::vector<Widget*> clickedWidgets;
+        std::vector<Dag::Element*> clickedElements;
+        std::vector<App::Cursor> cursorsOfClickedElements;
 
 		const Dag::Element& root() const;
 
