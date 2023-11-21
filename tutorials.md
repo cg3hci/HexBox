@@ -6,7 +6,7 @@ On this page you will find the description of some of the main features of HexBo
 
 
 ### Global Refinement
-Global refinement allows you to subdivide each hexahedron in the mesh with a 2-refinement schema (each hexahedron is substituted with 8 new hexahedra) to increase the whole mesh resolution. To apply this feature, press the key combination Ctrl+0. For more details, see Section 3.1.1 in the paper.
+Global refinement allows you to split each hexahedron in the mesh with a 2-refinement schema (each hexahedron is split into 8 new hexahedra) to increase the whole mesh resolution. To apply this feature, select one hexahedron and press the key combination Ctrl+0. For more details, see Section 3.1.1 in the paper.
 
 <div align="center">
   <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/ee86e023-ba84-494a-986e-4f69f3c9f753" width="70%" height="70%">
@@ -14,14 +14,16 @@ Global refinement allows you to subdivide each hexahedron in the mesh with a 2-r
 
 
 ### Local Refinement
-Local refinement allows you to change the resolution only in selected hexahedra, with 3-refinement schemes (each hexahedron is substituted with 27 new hexahedra). To apply this feature, press the key H. For more details, see Section 3.1.1 in the paper.
+Local refinement allows you to change the resolution only in selected hexahedra, with 3-refinement schemes (each hexahedron is split into 27 new hexahedra). To apply this feature, select the desired hexahedra by using Ctrl+MouseLeft and press the key H. For more details, see Section 3.1.1 in the paper.
 
 <div align="center">
   <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/960b8440-e9fb-4e65-8d46-30be937c3a38" width="70%" height="70%">
 </div>
 
 ### Face Refinement
-TO DO...
+Face refinement allows you to locally edit the singular structure of the mesh, splitting a hexahedron into 6 sub-elements so as to decompose the selected face into 5 quads, 1 central and 4 lateral. To apply this feature, select one face and press the key F. For more details, see Section 3.1.1 in the paper.
+
+--- ADD GIF ---
 
 ### Make Conforming
 Local refinement and face refinement introduce hanging nodes, producing a non-conforming mesh. We provide the "makeConforming" functionality to restore conformity on the mesh. To apply this feature, press the key Q. For more details, see Section 3.1.1 in the paper.
