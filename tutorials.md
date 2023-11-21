@@ -23,7 +23,9 @@ Local refinement allows you to change the resolution only in selected hexahedra,
 ### Face Refinement
 Face refinement allows you to locally edit the singular structure of the mesh, splitting a hexahedron into 6 sub-elements so as to decompose the selected face into 5 quads, 1 central and 4 lateral. To apply this feature, select one face and press the key F. For more details, see Section 3.1.1 in the paper.
 
---- ADD GIF ---
+<div align="center">
+  <img src="https://github.com/pusceddusimone/HexBox/assets/92328763/9d1ee636-826f-40a6-a9db-9aac5a8f68df" width="70%" height="70%">
+</div>
 
 ### Make Conforming
 Local refinement and face refinement introduce hanging nodes, producing a non-conforming mesh. We provide the "makeConforming" functionality to restore conformity on the mesh. To apply this feature, press the key Q. For more details, see Section 3.1.1 in the paper.
