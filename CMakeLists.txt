@@ -21,7 +21,7 @@ set (CINOLIB_USES_OPENGL_GLFW_IMGUI ON)
 FetchContent_Declare (
     cinolib
     GIT_REPOSITORY "https://github.com/francescozoccheddu/cinolib.git"
-    GIT_TAG "dcedf3358bba52c0d31d6ee8afb47af73b5e641e"
+    GIT_TAG "ad8f8ca2884b56de958b237ff28eb47b0646daf3"
     GIT_SHALLOW TRUE
     GIT_PROGRESS TRUE
 )
@@ -46,7 +46,7 @@ if (HMP_ENABLE_ALT_PROJ)
         fprotais
         GIT_REPOSITORY "https://github.com/fprotais/hexsmoothing"
         GIT_TAG "b538f7270d91a5e8baaa25287c06ab4a5c5d4cfb"
-        GIT_SHALLOW TRUE
+        GIT_SHALLOW FALSE
         GIT_PROGRESS TRUE
     )
     FetchContent_MakeAvailable (fprotais)
