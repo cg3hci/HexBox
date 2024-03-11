@@ -53,7 +53,7 @@ HexBox is meant to be a live project. On [this](videos.md) page you can find the
 
 **[Tutorials](tutorials.md)**
 
-**[Data]()**
+**[Here](models.zip)** you can find the models we shown in the paper, produced with our tool.
 
 ## Acknowledgement
 
