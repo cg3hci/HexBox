@@ -1,7 +1,6 @@
 # Tutorials
 
-On this page you will find the description of some of the main features of HexBox.
-NB: Use Cmd instead of Ctrl if you use a Mac.
+On this page you will find the description of some of the main features of HexBox (NB: Use Cmd instead of Ctrl if you use a Mac).
 
 ## Refinement
 
