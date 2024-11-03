@@ -66,7 +66,7 @@ FetchContent_Declare (
     cpputils
     GIT_REPOSITORY "https://github.com/francescozoccheddu/cpputils.git"
     GIT_TAG "56414519fe56d47413def942ecd29073d1c5be8e"
-    GIT_SHALLOW TRUE
+    GIT_SHALLOW FALSE
     GIT_PROGRESS TRUE
 )
 FetchContent_MakeAvailable (cpputils)
