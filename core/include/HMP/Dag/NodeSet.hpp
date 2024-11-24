@@ -62,10 +62,10 @@ namespace HMP::Dag
 		};
 
 		template<typename TNode>
-		constexpr TNode& nonConstNodeMapper(Node* _node) { return static_cast<TNode&>(*_node); }
+		constexpr TNode& nonConstNodeMapper(Node* _node) { return *reinterpret_cast<TNode*>(_node); }
 
 		template<typename TNode>
-		constexpr const TNode& constNodeMapper(Node* _node) { return static_cast<const TNode&>(*_node); }
+		constexpr const TNode& constNodeMapper(Node* _node) { return *reinterpret_cast<const TNode*>(_node); }
 
 		template<typename TNode>
 		using NonConstNodeRange = decltype(cpputils::range::ofc(std::declval<std::list<Node*>>()).map(&nonConstNodeMapper<TNode>));
